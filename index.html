@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Our Most Romantic Moments Together❤️✨ </title>
+    <style>
+        body {
+            font-family: 'B Nazanin', Arial, sans-serif; /* یک فونت فارسی عمومی یا فونت دلخواه */
+            text-align: center;
+            background-color: #f0f8ff; /* رنگ پس‌زمینه ملایم */
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            overflow: hidden; /* جلوگیری از اسکرول اضافی */
+            position: relative;
+        }
+        .header {
+            font-size: 2.5em;
+            color: #e75480; /* رنگ صورتی رمانتیک */
+            margin-bottom: 20px;
+            animation: fadeInDown 1.5s ease-out; /* انیمیشن ورود */
+        }
+        .message {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease-out;
+        }
+        .content-frame {
+            border: none;
+            width: 90%;
+            height: 60vh; /* ارتفاع فریم را تنظیم می کند */
+            max-width: 800px; /* حداکثر عرض فریم */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            background-color: white;
+            animation: fadeInUp 1.8s ease-out;
+            margin: 0 auto; /* برای وسط چین کردن فریم */
+        }
+        .music-player {
+            margin-top: 30px;
+            display: none; /* این پلیر را پنهان می کنیم چون پخش خودکار است */
+        }
+
+        /* انیمیشن ها */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="header"> Our Most Romantic Moments Together❤️✨ </div>
+    <div class="message">
+        نازیلای عزیزم، این هدیه کوچک شامل لحظات به‌یادماندنی ماست.<br>
+         امیدوارم از مرور خاطراتمان لذت ببری. مرد همیشه عاشقت،امیرحسین 💖
+    </div>
+
+    <audio class="music-player" autoplay loop>
+        <source src="music1" type="audio/mpeg">
+        <source src="music2" type="audio/mpeg">
+        مرورگر شما از پخش صدا پشتیبانی نمی‌کند.
+    </audio>
+
+    <iframe class="content-frame" src="**[اینجا لینک اشتراک‌گذاری پوشه گوگل درایو شما قرار می‌گیرد]**" allowfullscreen></iframe>
+
+    <div class="message" style="margin-top: 30px; font-size: 0.9em; color: #666;">
+        یازدهم مرداد ماه
+    </div>
+
+    <script>
+        // اسکریپت برای اطمینان از پخش موسیقی (ممکن است در برخی مرورگرها نیاز به تعامل کاربر باشد)
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const audioPlayer = document.querySelector('.music-player');
+            if (audioPlayer) {
+                audioPlayer.play().catch(error => {
+                    console.log('Autoplay was prevented. User interaction might be needed.', error);
+                    // می‌توانید یک پیام به کاربر نمایش دهید که برای پخش موسیقی کلیک کند
+                    // مثلا: alert('لطفاً برای پخش موزیک، روی هر جایی از صفحه کلیک کنید.');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
